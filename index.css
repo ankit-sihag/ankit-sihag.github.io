@@ -1,0 +1,163 @@
+*{
+    border-radius: 10px;
+}
+body{
+    background-color: rgb(37, 49, 60); background-image: url(./resources/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.outerdiv{
+    display: flex;
+    background-color: black;
+    width: auto;
+    flex-wrap: wrap;
+    position:relative;
+}
+.navbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    
+}
+.uldiv{
+   
+}
+.navbarul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+.navbarli{
+    list-style: none;
+    padding-left: 10px;
+    border: 2px solid rgb(23, 22, 22);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    transition: border-color 1s ease-in 0.5ms,
+                outline 1s ease-out,
+                border-radius 0.5ms ease-in;
+}
+@media only screen and (min-width:300px) {
+    .outerdiv{
+        width: auto;
+    }
+}
+@media only screen and (min-width:300px){
+
+    .navbar{
+        font-size: 1rem;
+       
+    }
+}
+.navbarli:hover{
+    border-color: rgb(90, 177, 177);
+    border-radius: 3px;
+}
+.parentdiv{
+    width: 97%;
+    border: 2px solid rgb(6, 6, 6);
+    background-color: rgb(73, 71, 71);
+    margin-top: 10px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+   
+    justify-content: space-around;
+}
+
+
+.child1 h3,h2,p{
+    color:whitesmoke;
+    text-align:center;
+    text-transform: capitalize;
+}
+.child1 h1{
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow:5px 3px 15px red; 
+    opacity: 0.8;
+}
+.child1{ 
+    padding: 5px;
+    height: auto;
+    background-color: rgb(52, 39, 39);
+}
+.child1 img{
+    width: 100%;
+}
+.child2 img{
+    width: 400px;
+    
+}
+.child2{
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 3px;
+    background-color: rgb(69, 46, 46);
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+    .child2{
+        background-color: rgb(22, 25, 25);
+        width: 100%;
+        
+    }
+    .child1 p{
+        font-style: bold;
+        font-size: 1.2em;
+    }
+    .child2 img{
+        width: 100%;
+    }
+    .parentdiv{
+        flex-wrap: wrap;
+    }
+
+}
+.combine{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    border: 3px solid black;
+    padding-top:5px;
+    background-image: url(./resources/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.html,.css,.js{
+    color: white;
+    padding: 2px;
+    border: 3px solid rgb(18, 17, 17);
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 5px;
+    width: 100%;
+}
+ img:hover{
+    zoom: 200%;
+}
+
+@media only screen and (max-width:600) {
+    .html,.css,.js{
+        width:33%;
+    }
+    .js img{
+        max-width: 200px;
+    }
+    h1,h2,p,h3{
+        font-size:2rem;
+    }
+}
